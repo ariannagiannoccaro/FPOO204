@@ -66,6 +66,13 @@ public class Main {
         System.out.println("El peso total del paquete es : " + pesoTotal + "gramos");*/
 
         //Programa 6
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese una frase: ");
+        String frase = sc.nextLine();
+
+        StringBuilder nombreReversa = new StringBuilder(frase);
+        System.out.println(nombreReversa.reverse());
     }
 }
 
