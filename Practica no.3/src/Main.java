@@ -15,7 +15,7 @@ public class Main {
 
         //programa 2
 
-        Scanner sc = new Scanner(System.in);
+        /*Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese su nombre: ");
         String nombre = sc.nextLine();
         System.out.println("Ingrese su apellido paterno: ");
@@ -26,7 +26,7 @@ public class Main {
         System.out.println("Escribiré tu nombre todo en minusculas: " + nombre.toLowerCase() + aP.toLowerCase() + aM.toLowerCase());
         System.out.println("Escribiré tu nombre todo en mayusculas: " + nombre.toUpperCase() + aP.toUpperCase() + aM.toUpperCase());
         System.out.println(nombre.substring(0,1).toUpperCase()
-                + aP.substring(0,1).toUpperCase() + aM.substring(0,1).toUpperCase());
+                + aP.substring(0,1).toUpperCase() + aM.substring(0,1).toUpperCase());*/
 
         //programa 3
 
@@ -39,9 +39,20 @@ public class Main {
             System.out.println("La suma de los enteros desde 1 hasta " + num + " es: " + suma);
 
         }*/
-    }
-}
 
 
         //Programa 4
+        /*Scanner sc = new Scanner(System.in);
+        System.out.println("introduce tu nombre ");
+        String nombre = sc.nextLine();
+
+        String nombreM = nombre.toUpperCase();
+        int longitud = nombreM.length();
+
+        System.out.println(nombreM + " tiene " + longitud + " caracteres");*/
+
+        //Programa 5
+
+    }
+}
 
