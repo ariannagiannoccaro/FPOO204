@@ -52,7 +52,20 @@ public class Main {
         System.out.println(nombreM + " tiene " + longitud + " caracteres");*/
 
         //Programa 5
+        /*Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese el número de payasos vendidos ");
+        int numPayasos = sc.nextInt();
 
+        System.out.println("Ingrese el número de muñecas vendidos ");
+        int numMuñecas = sc.nextInt();
+
+        int pesoPayaso = 112;
+        int pesoMuñeca = 75;
+
+        int pesoTotal = (numPayasos * pesoPayaso) + (numMuñecas * pesoMuñeca);
+        System.out.println("El peso total del paquete es : " + pesoTotal + "gramos");*/
+
+        //Programa 6
     }
 }
 
