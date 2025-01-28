@@ -9,11 +9,11 @@ public class ejercicio_3 {
         int age = scanner.nextInt();
 
         if (age < 4) {
-            System.out.println("La entrada es gratuita.");
+            System.out.println("Eres un niño pequeño, entras gratis");
         } else if (age <= 18) {
-            System.out.println("El precio de la entrada es $110.");
+            System.out.println("Tu entrada cuesta $110.");
         } else {
-            System.out.println("El precio de la entrada es $190.");
+            System.out.println("Su entrada cuesta $190.");
         }
 
         scanner.nextLine();
