@@ -3,16 +3,16 @@ import java.util.Scanner;
 public class ejercicio_5 {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scn = new Scanner(System.in);
 
         System.out.print("Introduce un numero: ");
-        double num1 = scanner.nextDouble();
+        double num1 = scn.nextDouble();
 
         System.out.print("Introduce otro numero: ");
-        double num2 = scanner.nextDouble();
+        double num2 = scn.nextDouble();
 
         System.out.print("Introduce la operación que quieres realizar (+, -, *, /): ");
-        char operador = scanner.next().charAt(0);
+        char operador = scn.next().charAt(0);
 
             switch (operador) {
             case '+':
@@ -38,7 +38,7 @@ public class ejercicio_5 {
                 System.out.println("Error: Operador no válido.");
         }
 
-            scanner.close();
+            scn.close();
     }
 }
 

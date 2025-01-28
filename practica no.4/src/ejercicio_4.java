@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class ejercicio_4 {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scn = new Scanner(System.in);
 
         System.out.print("Introduce un texto: ");
-        String text = scanner.nextLine();
+        String text = scn.nextLine();
 
         String reversedText = new StringBuilder(text).reverse().toString();
 

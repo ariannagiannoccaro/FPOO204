@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class ejercicio_3 {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scn = new Scanner(System.in);
 
         System.out.print("Introduce la edad del cliente: ");
-        int age = scanner.nextInt();
+        int age = scn.nextInt();
 
         if (age < 4) {
             System.out.println("Eres un niño pequeño, entras gratis");
@@ -16,6 +16,6 @@ public class ejercicio_3 {
             System.out.println("Su entrada cuesta $190.");
         }
 
-        scanner.nextLine();
+        scn.nextLine();
     }
 }
