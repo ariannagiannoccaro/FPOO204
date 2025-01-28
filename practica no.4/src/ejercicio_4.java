@@ -5,7 +5,7 @@ public class ejercicio_4 {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Introduce una cadena de texto: ");
+        System.out.print("Introduce un texto: ");
         String text = scanner.nextLine();
 
         String reversedText = new StringBuilder(text).reverse().toString();
