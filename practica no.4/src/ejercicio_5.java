@@ -41,5 +41,3 @@ public class ejercicio_5 {
             scn.close();
     }
 }
-
-
