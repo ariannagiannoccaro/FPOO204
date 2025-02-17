@@ -2,10 +2,10 @@ import javax.swing.JOptionPane;
 
 public class Caja_popular {
     // Atributos
-    private String titular;
-    private int noCuenta;
-    private int edad;
-    private double saldo;
+    public String titular;
+    public int noCuenta;
+    public int edad;
+    public double saldo;
 
     // Constructor
     public Caja_popular(int noCuenta, String titular, int edad) {

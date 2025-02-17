@@ -33,7 +33,7 @@ public class Main {
                 case 1:
                     JOptionPane.showMessageDialog(null, "Saldo actual: $" + cuentaUsuario.consultarSaldo());
                     break;
-                                                             
+
                 case 2:
                     double montoIngreso = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el monto a depositar:"));
                     cuentaUsuario.ingresarSaldo(montoIngreso);
