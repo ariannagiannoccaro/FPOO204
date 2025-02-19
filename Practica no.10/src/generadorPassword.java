@@ -37,7 +37,6 @@ public class generadorPassword {
     String fortaleza() {
         boolean tieneMayusculas = false;
         boolean tieneEspeciales = false;
-        boolean tieneNumeros = false;
 
         for (char c : contraseña.toCharArray()) {
             if (mayusculas.contains(String.valueOf(c))) {
@@ -46,14 +45,11 @@ public class generadorPassword {
             if (especial.contains(String.valueOf(c))) {
                 tieneEspeciales = true;
             }
-            if (numeros.contains(String.valueOf(c))) {
-                tieneNumeros = true;
-            }
         }
 
-        if (longitud >= 12 && tieneMayusculas && tieneEspeciales && tieneNumeros) {
+        if (longitud >= 12 && tieneMayusculas && tieneEspeciales) {
             return "Fuerte";
-        } else if (longitud >= 8 && (tieneMayusculas || tieneEspeciales || tieneNumeros)) {
+        } else if (longitud >= 8 && (tieneMayusculas || tieneEspeciales)) {
             return "Moderada";
         } else {
             return "Débil";
