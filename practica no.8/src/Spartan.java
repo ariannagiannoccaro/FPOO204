@@ -1,10 +1,17 @@
 public class Spartan {
 
     //atributos del spartan
-    public String nombre;
-    int salud;
-    int escudo;
-    String armaPrincipal;
+    private String nombre;
+    private int salud;
+    private int escudo;
+    private String armaPrincipal;
+
+    public Spartan(String nombre, int salud, int escudo, String armaPrincipal) {
+        this.nombre = nombre;
+        this.salud = salud;
+        this.escudo = escudo;
+        this.armaPrincipal = armaPrincipal;
+    }
 
     //Méodos del spartan
     public void mostrarInfo(){
@@ -32,6 +39,46 @@ public class Spartan {
         }else{
             System.out.println("El spartan "+ nombre+ " se detuvo");
         }
+    }
+
+    private void consultaCortana(){
+        System.out.println("Conversación Privada........");
+    }
+
+
+
+    //ZONA DE GETTERS Y SETTERS
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getSalud() {
+        return salud;
+    }
+
+    public void setSalud(int salud) {
+        this.salud = salud;
+    }
+
+    public int getEscudo() {
+        return escudo;
+    }
+
+    public void setEscudo(int escudo) {
+        this.escudo = escudo;
+    }
+
+    public String getArmaPrincipal() {
+        return armaPrincipal;
+    }
+
+    public void setArmaPrincipal(String armaPrincipal) {
+        this.armaPrincipal = armaPrincipal;
     }
 
 }//llave de la clase

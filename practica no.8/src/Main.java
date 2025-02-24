@@ -4,14 +4,9 @@ public class Main {
     public static void main(String[] args) {
 
         //Creación del objeto o instanciar del objeto
-        Spartan jefeMaestro = new Spartan();
-        Spartan reach = new Spartan();
+        Spartan jefeMaestro = new Spartan("John 117", 100, 90, "Escopeta" );
+        Spartan reach = new Spartan("Luke", 0, 0, "Aguijoneador");
 
-        //asignación de los atributos del objeto
-        jefeMaestro.nombre = "John";
-        jefeMaestro.salud = 100;
-        jefeMaestro.escudo = 90;
-        jefeMaestro.armaPrincipal= "Escopeta";
 
         //usar sus métodos
         jefeMaestro.mostrarInfo();
@@ -20,16 +15,18 @@ public class Main {
         jefeMaestro.correr(true);
 
 
-        //reach
-        reach.nombre = "Luke";
-        reach.salud = 0;
-        reach.escudo = 0;
-        reach.armaPrincipal= "Aguijoneador";
-
         reach.mostrarInfo();
         reach.atacar("Elite");
         reach.recargarArma(0);
         reach.correr(false);
+
+
+        //ejemplo de get y set con el objeto jefeMaestro
+        jefeMaestro.setNombre("Arianna Giannoccaro");
+        jefeMaestro.mostrarInfo();
+        System.out.println(jefeMaestro.getNombre());
+
+
     }
 
 
