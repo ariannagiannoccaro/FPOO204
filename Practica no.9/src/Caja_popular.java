@@ -2,10 +2,12 @@ import javax.swing.JOptionPane;
 
 public class Caja_popular {
     // Atributos
-    public String titular;
-    public int noCuenta;
-    public int edad;
-    public double saldo;
+    private String titular;
+    private int noCuenta;
+    private int edad;
+    private double saldo;
+
+
 
     // Constructor
     public Caja_popular(int noCuenta, String titular, int edad) {
@@ -68,5 +70,39 @@ public class Caja_popular {
                 "\nSaldo actual: $" + saldo;
 
         JOptionPane.showMessageDialog(null, info, "Información de la cuenta", JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    //ZONA DE GETTERS AND SETTERS
+
+    public String getTitular() {
+        return titular;
+    }
+
+    public void setTitular(String titular) {
+        this.titular = titular;
+    }
+
+    public int getNoCuenta() {
+        return noCuenta;
+    }
+
+    public void setNoCuenta(int noCuenta) {
+        this.noCuenta = noCuenta;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 }
