@@ -16,12 +16,21 @@ public class Envio {
         this.destino = destino;
     }
 
+    public static Envio crearEnvio(){
+        int codigo = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el codigo del envio:"));
+        String destino = JOptionPane.showInputDialog("Ingrese el destino");
+        String answer = JOptionPane.showInputDialog("Quiere ingresar peso? (S/N)");
+
+        if (answer.equalsIgnoreCase("S")) {
+            double peso = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el peso"));
+            return new Envio(codigo, destino, peso);
+        }else{
+            return new Envio(codigo, destino);
+        }
+    }
 
 
-
-
-
-
+ //zona g&s
     public int getCodigoEnvio() {
         return codigoEnvio;
     }
