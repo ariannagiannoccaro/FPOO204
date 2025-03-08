@@ -12,3 +12,4 @@ public class Conductor extends Empleado{
         JOptionPane.showMessageDialog(null, "Nombre: " + nombre + "\nTipo: " + tipo + "\nSalario: " + salario + "\nLicencia: " + licencia);
     }
 }
+
