@@ -23,10 +23,10 @@ public class Oficina {
 
             switch (seleccion) {
                 case 0:
-                    gestor.agregarEmpleado(); // Delegar la responsabilidad al gestor
+                    gestor.agregarEmpleado();
                     break;
                 case 1:
-                    gestor.listarEmpleados(); // Delegar la responsabilidad al gestor
+                    gestor.listarEmpleados();
                     break;
                 case 2:
                     JOptionPane.showMessageDialog(null, "Saliendo del sistema...");

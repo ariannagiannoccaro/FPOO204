@@ -26,10 +26,10 @@ public class GestorEmpleado {
         String nombre = JOptionPane.showInputDialog("Ingrese el nombre del empleado:");
         double salario = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el salario del empleado:"));
 
-        if (tipoSeleccionado == 0) { // Conductor
+        if (tipoSeleccionado == 0) {
             String licencia = JOptionPane.showInputDialog("Ingrese la licencia del conductor:");
             empleados.add(new Conductor(nombre, tipoSeleccionado, salario, licencia));
-        } else if (tipoSeleccionado == 1) { // Administrativo
+        } else if (tipoSeleccionado == 1) {
             String licencia = JOptionPane.showInputDialog("Ingrese la licencia del administrativo:");
             String departamento = JOptionPane.showInputDialog("Ingrese el departamento del administrativo:");
             empleados.add(new Administrativo(nombre, tipoSeleccionado, salario, licencia, departamento));
@@ -56,7 +56,7 @@ public class GestorEmpleado {
                     lista.append("Departamento: ").append(((Administrativo) empleado).departamento).append("\n");
                 }
 
-                lista.append("\n"); // Separador entre empleados
+                lista.append("\n");
             }
             JOptionPane.showMessageDialog(null, lista.toString());
         }
