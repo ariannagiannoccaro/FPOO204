@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Cuartel {
     public static void main(String[] args) {
         SpartanII jefeMaestro = new SpartanII("John 117", 100, "Rifle de Asalto", 0);
@@ -19,7 +21,6 @@ public class Cuartel {
         Noble6.atacar("Elite");
         Noble6.recibirDaño(50);
         Noble6.recargarEscudo();
-
         System.out.println();
         System.out.println("------------------------------------------------------------------------------");
 
