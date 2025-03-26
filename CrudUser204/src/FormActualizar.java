@@ -125,16 +125,16 @@ public class FormActualizar extends javax.swing.JFrame {
 
     private void btnActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarActionPerformed
 
-    int filaSeleccionada = jTable2.getSelectedRow(); // Obtener fila seleccionada
+    int filaSeleccionada = jTable2.getSelectedRow(); // Obtener fila seleccionada para poder modificar
 
     try {
         // Verificar si no hay una fila seleccionada
         if (filaSeleccionada == -1) {
-            System.out.println("Por favor, selecciona una fila para actualizar.");
+            System.out.println("Debes seleccionar una fila para poder actualizar.");
             return;
         }
 
-        // Obtener los datos de la fila seleccionada
+        // Obtener los datos de la fila
         int id = (int) jTable2.getValueAt(filaSeleccionada, 0); 
         String nombre = (String) jTable2.getValueAt(filaSeleccionada, 1); 
         String correo = (String) jTable2.getValueAt(filaSeleccionada, 2);
