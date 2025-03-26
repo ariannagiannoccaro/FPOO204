@@ -41,7 +41,7 @@ public class FormConsulta extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         btnTodos = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 0, 102));
@@ -72,7 +72,15 @@ public class FormConsulta extends javax.swing.JFrame {
             new String [] {
                 "Id", "Nombre", "Correo", "Contraseña"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, true, true, true
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane1.setViewportView(jTable1);
 
         btnTodos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N

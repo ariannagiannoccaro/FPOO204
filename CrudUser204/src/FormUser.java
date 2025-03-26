@@ -50,7 +50,7 @@ public class FormUser extends javax.swing.JFrame {
         txtCorreo = new javax.swing.JTextField();
         txtContrasena = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Light", 3, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 0, 51));
