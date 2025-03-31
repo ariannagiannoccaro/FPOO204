@@ -88,16 +88,17 @@ public class UserCRUD {
   }//actualizar Id
     
     public boolean eliminarUsuario(int id) {
-    String sqlEliminar = "DELETE FROM usuarios WHERE id = ?";
-    try {
+        String sqlEliminar = "DELETE FROM usuarios WHERE id = ?";
+        try {
         PreparedStatement ps = conexion.prepareStatement(sqlEliminar);
         ps.setInt(1, id); 
         int filasEliminada = ps.executeUpdate(); 
         
         return filasEliminada > 0; 
-    } catch (SQLException d) {
+         } 
+        catch (SQLException d) {
         System.out.println("Error al eliminar usuario: " + d.getMessage());
         return false;
-    }
-}//fin eliminar
+        }
+    }//fin eliminar
 }

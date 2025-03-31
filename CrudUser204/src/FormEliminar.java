@@ -173,6 +173,12 @@ public class FormEliminar extends javax.swing.JFrame {
             int id = (int) jTable1.getValueAt(filaSeleccionada, 0); 
 
             boolean eliminado = crud.eliminarUsuario(id);
+            
+            if (eliminado){
+                System.out.println("El usuario ha sido eliminado con éxito");
+            }else{
+                System.out.println("Error al eliminar el usuario");
+            }
         }
         catch (Exception d){
             System.out.println("Error al eliminar: " + d.getMessage());
