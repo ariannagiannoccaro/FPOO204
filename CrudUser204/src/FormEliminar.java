@@ -13,7 +13,7 @@ import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 public class FormEliminar extends javax.swing.JFrame {
     
-    private UserCRUD crud;
+    private final UserCRUD crud;
 
     /**
      * Creates new form FormEliminar
@@ -213,10 +213,8 @@ public class FormEliminar extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new FormEliminar().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new FormEliminar().setVisible(true);
         });
     }
 

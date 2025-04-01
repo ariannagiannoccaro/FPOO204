@@ -144,12 +144,7 @@ public class FormActualizar extends javax.swing.JFrame {
         crud = new UserCRUD();
         boolean actualizado = crud.actualizarId(nombre, correo, contrasena, id);
 
-        if (actualizado) {
-            System.out.println("El usuario ha sido actualizado correctamente.");
-        } else {
-            System.out.println("No se pudo actualizar el usuario.");
-        }
-
+   
     } catch (Exception z) {
         System.out.println("Error al actualizar: " + z.getMessage());
     }
@@ -216,10 +211,8 @@ public class FormActualizar extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-              new FormActualizar().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new FormActualizar().setVisible(true);
         });
     }
 
