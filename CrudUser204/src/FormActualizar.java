@@ -41,7 +41,7 @@ public class FormActualizar extends javax.swing.JFrame {
         jTable2 = new javax.swing.JTable();
         txtId = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 0, 51));
@@ -218,7 +218,7 @@ public class FormActualizar extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FormActualizar().setVisible(true);
+              new FormActualizar().setVisible(true);
             }
         });
     }
