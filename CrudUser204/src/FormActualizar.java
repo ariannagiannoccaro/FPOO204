@@ -72,7 +72,15 @@ public class FormActualizar extends javax.swing.JFrame {
             new String [] {
                 "Id", "Nombre", "Correo", "Contraseña"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, true, true, true
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane2.setViewportView(jTable2);
 
         txtId.addActionListener(new java.awt.event.ActionListener() {
